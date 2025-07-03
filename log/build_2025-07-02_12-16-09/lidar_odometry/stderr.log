@@ -1,0 +1,4 @@
+/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Matrix4d&, bool)’:
+/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1144:94: warning: unused parameter ‘transform’ [-Wunused-parameter]
+ 1144 | Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Eigen::Matrix4d& transform, bool is_loop_closure)
+      |                                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~

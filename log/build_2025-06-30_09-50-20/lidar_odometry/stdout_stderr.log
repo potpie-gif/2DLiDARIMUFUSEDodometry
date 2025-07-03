@@ -1,0 +1,2 @@
+Consolidate compiler generated dependencies of target lidar_odometry_node
+[ 20%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o

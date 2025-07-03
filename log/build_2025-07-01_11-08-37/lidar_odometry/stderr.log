@@ -1,0 +1,4 @@
+/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘void LidarOdometry::compensate_for_terrain_inclination(pcl::PointCloud<pcl::PointXYZ>&)’:
+/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:203:21: warning: variable ‘gravity_sensor’ set but not used [-Wunused-but-set-variable]
+  203 |     Eigen::Vector3d gravity_sensor = rotation_matrix.transpose() * gravity_world;
+      |                     ^~~~~~~~~~~~~~

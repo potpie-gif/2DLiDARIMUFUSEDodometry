@@ -1,0 +1,11 @@
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/uninstall.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/lidar_odometry_uninstall.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/lidar_odometry_node.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/qr_test_publisher.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/test.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/edit_cache.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/rebuild_cache.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/list_install_components.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/install.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/install/local.dir
+/home/por/ros2_ws/build/lidar_odometry/CMakeFiles/install/strip.dir

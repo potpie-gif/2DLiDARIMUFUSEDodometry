@@ -1,0 +1,3 @@
+[0.015s] Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[0.470s] [ 20%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o
+[97.708s] [ 40%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o

@@ -1,0 +1,32 @@
+[0.011s] Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[0.145s] Consolidate compiler generated dependencies of target lidar_odometry_node
+[0.152s] [ 40%] Built target qr_test_publisher
+[0.217s] [ 60%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o
+[5.890s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Matrix4d&, bool)’:
+[5.890s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1144:94: warning: unused parameter ‘transform’ [-Wunused-parameter]
+[5.890s]  1144 | Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Eigen::Matrix4d& transform, bool is_loop_closure)
+[5.890s]       |                                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[24.638s] [ 80%] Linking CXX executable lidar_odometry_node
+[27.435s] [100%] Built target lidar_odometry_node
+[27.447s] Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[27.463s] Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_odometry
+[27.473s] -- Install configuration: ""
+[27.474s] -- Installing: /home/por/ros2_ws/install/lidar_odometry/lib/lidar_odometry/lidar_odometry_node
+[27.484s] -- Set runtime path of "/home/por/ros2_ws/install/lidar_odometry/lib/lidar_odometry/lidar_odometry_node" to ""
+[27.485s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/lib/lidar_odometry/qr_test_publisher
+[27.486s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/ament_index/resource_index/package_run_dependencies/lidar_odometry
+[27.486s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/ament_index/resource_index/parent_prefix_path/lidar_odometry
+[27.486s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.sh
+[27.486s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/ament_prefix_path.dsv
+[27.486s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/path.sh
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/environment/path.dsv
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.bash
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.sh
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.zsh
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/local_setup.dsv
+[27.487s] -- Installing: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.dsv
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/ament_index/resource_index/packages/lidar_odometry
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig.cmake
+[27.487s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/cmake/lidar_odometryConfig-version.cmake
+[27.488s] -- Up-to-date: /home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.xml
+[27.489s] Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_odometry

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6b7aa83b2b4a40b44e7d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lidar_odometry",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_odometry_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_odometry_node-5767f6ab66743f1738b5.json",
+					"name" : "lidar_odometry_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_odometry_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_odometry_uninstall-c3466183e6193bd21528.json",
+					"name" : "lidar_odometry_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qr_test_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qr_test_publisher-9b98bb41f172dfd5fc34.json",
+					"name" : "qr_test_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-78b113e5ca2469459422.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/por/ros2_ws/build/lidar_odometry",
+		"source" : "/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

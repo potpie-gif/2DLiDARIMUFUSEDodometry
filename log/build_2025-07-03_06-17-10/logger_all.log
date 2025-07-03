@@ -1,0 +1,203 @@
+[0.165s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.165s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff995dfbb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff995df6a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff995df6a0>>)
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.357s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/por/ros2_ws'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extension 'ignore_ament_install'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extensions ['colcon_pkg']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extension 'colcon_pkg'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extensions ['colcon_meta']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extension 'colcon_meta'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extensions ['ros']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/Simple-2D-LiDAR-Odometry) by extension 'ros'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Simple-2D-LiDAR-Odometry' with type 'ros.ament_cmake' and name 'lidar_odometry'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_robot_simulation) by extension 'ros'
+[0.392s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_robot_simulation' with type 'ros.ament_cmake' and name 'lidar_robot_simulation'
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.449s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/por/ros2_ws/install
+[0.450s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 282 installed packages in /opt/ros/humble
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'cmake_target' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.526s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/por/ros2_ws/build/lidar_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/por/ros2_ws/install/lidar_odometry', 'merge_install': False, 'path': '/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry', 'symlink_install': False, 'test_result_base': None}
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'cmake_target' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'lidar_robot_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.526s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_robot_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/por/ros2_ws/build/lidar_robot_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/por/ros2_ws/install/lidar_robot_simulation', 'merge_install': False, 'path': '/home/por/ros2_ws/src/lidar_robot_simulation', 'symlink_install': False, 'test_result_base': None}
+[0.526s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.531s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry' with build type 'ament_cmake'
+[0.532s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry'
+[0.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.535s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.535s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.550s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/por/ros2_ws/src/lidar_robot_simulation' with build type 'ament_cmake'
+[0.550s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/por/ros2_ws/src/lidar_robot_simulation'
+[0.550s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.550s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[0.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/por/ros2_ws/build/lidar_robot_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_robot_simulation -- -j2 -l2
+[0.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/por/ros2_ws/build/lidar_robot_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_robot_simulation -- -j2 -l2
+[0.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/por/ros2_ws/build/lidar_robot_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_robot_simulation
+[0.778s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_robot_simulation)
+[0.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/por/ros2_ws/build/lidar_robot_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_robot_simulation
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation' for CMake module files
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation' for CMake config files
+[0.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_robot_simulation', 'cmake_prefix_path')
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/hook/cmake_prefix_path.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/hook/cmake_prefix_path.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/hook/cmake_prefix_path.sh'
+[0.787s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/bin'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/lib/pkgconfig/lidar_robot_simulation.pc'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/lib/python3.10/site-packages'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/bin'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.dsv'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.sh'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.bash'
+[0.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.zsh'
+[0.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/por/ros2_ws/install/lidar_robot_simulation/share/colcon-core/packages/lidar_robot_simulation)
+[0.791s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_robot_simulation)
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation' for CMake module files
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation' for CMake config files
+[0.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_robot_simulation', 'cmake_prefix_path')
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/hook/cmake_prefix_path.ps1'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/hook/cmake_prefix_path.dsv'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/hook/cmake_prefix_path.sh'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/bin'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/lib/pkgconfig/lidar_robot_simulation.pc'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/lib/python3.10/site-packages'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_robot_simulation/bin'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.dsv'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.bash'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.zsh'
+[0.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/por/ros2_ws/install/lidar_robot_simulation/share/colcon-core/packages/lidar_robot_simulation)
+[44.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[44.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_odometry
+[45.063s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_odometry)
+[45.064s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry' for CMake module files
+[45.065s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_odometry
+[45.065s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry' for CMake config files
+[45.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_odometry', 'cmake_prefix_path')
+[45.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.ps1'
+[45.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.dsv'
+[45.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.sh'
+[45.068s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/lib'
+[45.069s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/bin'
+[45.069s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/lib/pkgconfig/lidar_odometry.pc'
+[45.069s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/lib/python3.10/site-packages'
+[45.070s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/bin'
+[45.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.ps1'
+[45.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.dsv'
+[45.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.sh'
+[45.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.bash'
+[45.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.zsh'
+[45.077s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/por/ros2_ws/install/lidar_odometry/share/colcon-core/packages/lidar_odometry)
+[45.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_odometry)
+[45.077s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry' for CMake module files
+[45.078s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry' for CMake config files
+[45.078s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_odometry', 'cmake_prefix_path')
+[45.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.ps1'
+[45.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.dsv'
+[45.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/hook/cmake_prefix_path.sh'
+[45.079s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/lib'
+[45.079s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/bin'
+[45.079s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/lib/pkgconfig/lidar_odometry.pc'
+[45.079s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/lib/python3.10/site-packages'
+[45.079s] Level 1:colcon.colcon_core.environment:checking '/home/por/ros2_ws/install/lidar_odometry/bin'
+[45.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.ps1'
+[45.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.dsv'
+[45.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.sh'
+[45.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.bash'
+[45.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/por/ros2_ws/install/lidar_odometry/share/lidar_odometry/package.zsh'
+[45.081s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/por/ros2_ws/install/lidar_odometry/share/colcon-core/packages/lidar_odometry)
+[45.081s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[45.082s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[45.082s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[45.082s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[45.089s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[45.089s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[45.089s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[45.158s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[45.159s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/por/ros2_ws/install/local_setup.ps1'
+[45.160s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/por/ros2_ws/install/_local_setup_util_ps1.py'
+[45.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/por/ros2_ws/install/setup.ps1'
+[45.166s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/por/ros2_ws/install/local_setup.sh'
+[45.166s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/por/ros2_ws/install/_local_setup_util_sh.py'
+[45.167s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/por/ros2_ws/install/setup.sh'
+[45.167s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/por/ros2_ws/install/local_setup.bash'
+[45.168s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/por/ros2_ws/install/setup.bash'
+[45.184s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/por/ros2_ws/install/local_setup.zsh'
+[45.185s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/por/ros2_ws/install/setup.zsh'

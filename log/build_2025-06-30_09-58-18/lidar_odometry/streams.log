@@ -1,0 +1,9 @@
+[0.019s] Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[0.190s] [ 20%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o[0m
+[81.133s] [ 40%] [32mBuilding CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o[0m
+[133.467s] gmake[2]: *** wait: No child processes.  Stop.
+[133.467s] gmake[2]: *** Waiting for unfinished jobs....
+[133.467s] gmake[2]: *** wait: No child processes.  Stop.
+[133.467s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/lidar_odometry_node.dir/all] Error 2
+[133.467s] gmake: *** [Makefile:146: all] Interrupt
+[133.506s] Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2

@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch/complete_simulation.launch.py
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch/gazebo_simulation.launch.py
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch/simple_simulation.launch.py
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//urdf
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//urdf/lidar_robot.urdf.xacro
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//worlds
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//worlds/simple_world.world
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//config
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//config/robot_view.rviz
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/ament_index/resource_index/package_run_dependencies/lidar_robot_simulation
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/ament_index/resource_index/parent_prefix_path/lidar_robot_simulation
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/ament_prefix_path.sh
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/path.sh
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/path.dsv
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.bash
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.sh
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.zsh
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.dsv
+-- Installing: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.dsv
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/ament_index/resource_index/packages/lidar_robot_simulation
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/cmake/lidar_robot_simulationConfig.cmake
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/cmake/lidar_robot_simulationConfig-version.cmake
+-- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.xml

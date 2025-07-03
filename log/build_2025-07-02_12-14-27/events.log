@@ -1,0 +1,642 @@
+[0.000000] (-) TimerEvent: {}
+[0.000049] (-) JobUnselected: {'identifier': 'lidar_robot_simulation'}
+[0.000074] (lidar_odometry) JobQueued: {'identifier': 'lidar_odometry', 'dependencies': OrderedDict()}
+[0.000567] (lidar_odometry) JobStarted: {'identifier': 'lidar_odometry'}
+[0.005814] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'cmake'}
+[0.006750] (lidar_odometry) JobProgress: {'identifier': 'lidar_odometry', 'progress': 'build'}
+[0.007834] (lidar_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/por/ros2_ws/build/lidar_odometry', '--', '-j2', '-l2'], 'cwd': '/home/por/ros2_ws/build/lidar_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'por'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/por'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/por/.nvm/versions/node/v22.17.0/bin'), ('NVM_INC', '/home/por/.nvm/versions/node/v22.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2160'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/por/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'por'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'por'), ('TERM', 'xterm-256color'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/por/.nvm/versions/node/v22.17.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/por:@/tmp/.ICE-unix/1714,unix/por:/tmp/.ICE-unix/1714'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e574c056_5511_43bf_bbf0_f4cfdf3899ba'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5EOF92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/por/ros2_ws/build/lidar_odometry'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.065649] (lidar_odometry) StdoutLine: {'line': b'[ 40%] Built target qr_test_publisher\n'}
+[0.087810] (lidar_odometry) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lidar_odometry_node\n'}
+[0.099776] (-) TimerEvent: {}
+[0.107860] (lidar_odometry) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o\n'}
+[0.110246] (lidar_odometry) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o\n'}
+[0.199876] (-) TimerEvent: {}
+[0.300023] (-) TimerEvent: {}
+[0.400177] (-) TimerEvent: {}
+[0.500330] (-) TimerEvent: {}
+[0.601063] (-) TimerEvent: {}
+[0.701231] (-) TimerEvent: {}
+[0.801400] (-) TimerEvent: {}
+[0.901581] (-) TimerEvent: {}
+[1.001754] (-) TimerEvent: {}
+[1.101917] (-) TimerEvent: {}
+[1.202084] (-) TimerEvent: {}
+[1.302242] (-) TimerEvent: {}
+[1.402411] (-) TimerEvent: {}
+[1.502573] (-) TimerEvent: {}
+[1.602746] (-) TimerEvent: {}
+[1.704798] (-) TimerEvent: {}
+[1.804970] (-) TimerEvent: {}
+[1.905140] (-) TimerEvent: {}
+[2.005322] (-) TimerEvent: {}
+[2.105472] (-) TimerEvent: {}
+[2.205639] (-) TimerEvent: {}
+[2.308805] (-) TimerEvent: {}
+[2.408977] (-) TimerEvent: {}
+[2.509152] (-) TimerEvent: {}
+[2.609329] (-) TimerEvent: {}
+[2.709504] (-) TimerEvent: {}
+[2.809717] (-) TimerEvent: {}
+[2.909952] (-) TimerEvent: {}
+[3.010151] (-) TimerEvent: {}
+[3.110324] (-) TimerEvent: {}
+[3.210523] (-) TimerEvent: {}
+[3.310720] (-) TimerEvent: {}
+[3.411161] (-) TimerEvent: {}
+[3.511431] (-) TimerEvent: {}
+[3.611608] (-) TimerEvent: {}
+[3.711904] (-) TimerEvent: {}
+[3.812394] (-) TimerEvent: {}
+[3.912713] (-) TimerEvent: {}
+[4.012909] (-) TimerEvent: {}
+[4.113087] (-) TimerEvent: {}
+[4.213259] (-) TimerEvent: {}
+[4.313420] (-) TimerEvent: {}
+[4.413585] (-) TimerEvent: {}
+[4.513755] (-) TimerEvent: {}
+[4.614217] (-) TimerEvent: {}
+[4.714398] (-) TimerEvent: {}
+[4.814573] (-) TimerEvent: {}
+[4.914736] (-) TimerEvent: {}
+[5.014913] (-) TimerEvent: {}
+[5.115086] (-) TimerEvent: {}
+[5.215266] (-) TimerEvent: {}
+[5.315449] (-) TimerEvent: {}
+[5.415625] (-) TimerEvent: {}
+[5.515797] (-) TimerEvent: {}
+[5.615984] (-) TimerEvent: {}
+[5.716159] (-) TimerEvent: {}
+[5.816335] (-) TimerEvent: {}
+[5.918566] (-) TimerEvent: {}
+[6.018820] (-) TimerEvent: {}
+[6.119012] (-) TimerEvent: {}
+[6.219225] (-) TimerEvent: {}
+[6.319411] (-) TimerEvent: {}
+[6.419670] (-) TimerEvent: {}
+[6.519849] (-) TimerEvent: {}
+[6.620020] (-) TimerEvent: {}
+[6.720793] (-) TimerEvent: {}
+[6.820964] (-) TimerEvent: {}
+[6.896814] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function \xe2\x80\x98void LidarOdometry::process_scan_data(ScanDataPtr)\xe2\x80\x99:\n'}
+[6.897754] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:144:41: error: \xe2\x80\x98target_corrected\xe2\x80\x99 was not declared in this scope\n'}
+[6.897834] (lidar_odometry) StderrLine: {'line': b'  144 |                         create_keyframe(target_corrected, state_ptr->pose, scan_ptr->timestamp);\n'}
+[6.897882] (lidar_odometry) StderrLine: {'line': b'      |                                         ^~~~~~~~~~~~~~~~\n'}
+[6.897932] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:147:46: warning: comparison of integer expressions of different signedness: \xe2\x80\x98std::vector<LidarOdometry::Keyframe>::size_type\xe2\x80\x99 {aka \xe2\x80\x98long unsigned int\xe2\x80\x99} and \xe2\x80\x98int\xe2\x80\x99 [-Wsign-compare]\n'}
+[6.898012] (lidar_odometry) StderrLine: {'line': b'  147 |                         if (keyframes.size() > min_keyframes_between_loops) {\n'}
+[6.898067] (lidar_odometry) StderrLine: {'line': b'      |                             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[6.921057] (-) TimerEvent: {}
+[7.021216] (-) TimerEvent: {}
+[7.121400] (-) TimerEvent: {}
+[7.221603] (-) TimerEvent: {}
+[7.292383] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function \xe2\x80\x98std::vector<int, std::allocator<int> > LidarOdometry::detect_loop_closure_candidates(const std::vector<float>&)\xe2\x80\x99:\n'}
+[7.292589] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:932:26: warning: comparison of integer expressions of different signedness: \xe2\x80\x98std::vector<LidarOdometry::Keyframe>::size_type\xe2\x80\x99 {aka \xe2\x80\x98long unsigned int\xe2\x80\x99} and \xe2\x80\x98int\xe2\x80\x99 [-Wsign-compare]\n'}
+[7.292654] (lidar_odometry) StderrLine: {'line': b'  932 |     if (keyframes.size() < min_keyframes_between_loops) {\n'}
+[7.292732] (lidar_odometry) StderrLine: {'line': b'      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[7.301482] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function \xe2\x80\x98void LidarOdometry::optimize_pose_graph()\xe2\x80\x99:\n'}
+[7.301714] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1071:30: error: \xe2\x80\x98Vector6d\xe2\x80\x99 is not a member of \xe2\x80\x98Eigen\xe2\x80\x99; did you mean \xe2\x80\x98VectorXd\xe2\x80\x99?\n'}
+[7.301780] (lidar_odometry) StderrLine: {'line': b' 1071 |         std::map<int, Eigen::Vector6d> delta_poses;\n'}
+[7.301869] (lidar_odometry) StderrLine: {'line': b'      |                              ^~~~~~~~\n'}
+[7.301920] (lidar_odometry) StderrLine: {'line': b'      |                              VectorXd\n'}
+[7.301961] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1071:38: error: template argument 2 is invalid\n'}
+[7.301998] (lidar_odometry) StderrLine: {'line': b' 1071 |         std::map<int, Eigen::Vector6d> delta_poses;\n'}
+[7.302054] (lidar_odometry) StderrLine: {'line': b'      |                                      ^\n'}
+[7.302093] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1071:38: error: template argument 4 is invalid\n'}
+[7.321688] (-) TimerEvent: {}
+[7.327439] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1076:28: error: invalid types \xe2\x80\x98int[std::tuple_element<0, std::pair<const int, LidarOdometry::PoseNode> >::type {aka const int}]\xe2\x80\x99 for array subscript\n'}
+[7.327557] (lidar_odometry) StderrLine: {'line': b' 1076 |                 delta_poses[id] = Eigen::Vector6d::Zero();\n'}
+[7.327624] (lidar_odometry) StderrLine: {'line': b'      |                            ^\n'}
+[7.327799] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1076:42: error: \xe2\x80\x98Eigen::Vector6d\xe2\x80\x99 has not been declared\n'}
+[7.327862] (lidar_odometry) StderrLine: {'line': b' 1076 |                 delta_poses[id] = Eigen::Vector6d::Zero();\n'}
+[7.327915] (lidar_odometry) StderrLine: {'line': b'      |                                          ^~~~~~~~\n'}
+[7.389363] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1102:20: error: \xe2\x80\x98Vector6d\xe2\x80\x99 is not a member of \xe2\x80\x98Eigen\xe2\x80\x99; did you mean \xe2\x80\x98VectorXd\xe2\x80\x99?\n'}
+[7.389532] (lidar_odometry) StderrLine: {'line': b' 1102 |             Eigen::Vector6d error;\n'}
+[7.389580] (lidar_odometry) StderrLine: {'line': b'      |                    ^~~~~~~~\n'}
+[7.389637] (lidar_odometry) StderrLine: {'line': b'      |                    VectorXd\n'}
+[7.407828] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1103:13: error: \xe2\x80\x98error\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98perror\xe2\x80\x99?\n'}
+[7.408028] (lidar_odometry) StderrLine: {'line': b' 1103 |             error.head<3>() = translation_error;\n'}
+[7.408125] (lidar_odometry) StderrLine: {'line': b'      |             ^~~~~\n'}
+[7.408182] (lidar_odometry) StderrLine: {'line': b'      |             perror\n'}
+[7.408372] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1103:27: error: expected primary-expression before \xe2\x80\x98)\xe2\x80\x99 token\n'}
+[7.408435] (lidar_odometry) StderrLine: {'line': b' 1103 |             error.head<3>() = translation_error;\n'}
+[7.408477] (lidar_odometry) StderrLine: {'line': b'      |                           ^\n'}
+[7.408618] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1104:27: error: expected primary-expression before \xe2\x80\x98)\xe2\x80\x99 token\n'}
+[7.408709] (lidar_odometry) StderrLine: {'line': b' 1104 |             error.tail<3>() = rotation_error_vec;\n'}
+[7.408809] (lidar_odometry) StderrLine: {'line': b'      |                           ^\n'}
+[7.409064] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1112:52: error: request for member \xe2\x80\x98find\xe2\x80\x99 in \xe2\x80\x98delta_poses\xe2\x80\x99, which is of non-class type \xe2\x80\x98int\xe2\x80\x99\n'}
+[7.409117] (lidar_odometry) StderrLine: {'line': b' 1112 |             if (!from_node.is_fixed && delta_poses.find(edge.from_id) != delta_poses.end()) {\n'}
+[7.409178] (lidar_odometry) StderrLine: {'line': b'      |                                                    ^~~~\n'}
+[7.409358] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1112:86: error: request for member \xe2\x80\x98end\xe2\x80\x99 in \xe2\x80\x98delta_poses\xe2\x80\x99, which is of non-class type \xe2\x80\x98int\xe2\x80\x99\n'}
+[7.409459] (lidar_odometry) StderrLine: {'line': b' 1112 |             if (!from_node.is_fixed && delta_poses.find(edge.from_id) != delta_poses.end()) {\n'}
+[7.409499] (lidar_odometry) StderrLine: {'line': b'      |                                                                                      ^~~\n'}
+[7.409661] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1113:28: error: invalid types \xe2\x80\x98int[const int]\xe2\x80\x99 for array subscript\n'}
+[7.409727] (lidar_odometry) StderrLine: {'line': b' 1113 |                 delta_poses[edge.from_id] -= learning_rate * error;\n'}
+[7.409787] (lidar_odometry) StderrLine: {'line': b'      |                            ^\n'}
+[7.409933] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1115:50: error: request for member \xe2\x80\x98find\xe2\x80\x99 in \xe2\x80\x98delta_poses\xe2\x80\x99, which is of non-class type \xe2\x80\x98int\xe2\x80\x99\n'}
+[7.409986] (lidar_odometry) StderrLine: {'line': b' 1115 |             if (!to_node.is_fixed && delta_poses.find(edge.to_id) != delta_poses.end()) {\n'}
+[7.410038] (lidar_odometry) StderrLine: {'line': b'      |                                                  ^~~~\n'}
+[7.410167] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1115:82: error: request for member \xe2\x80\x98end\xe2\x80\x99 in \xe2\x80\x98delta_poses\xe2\x80\x99, which is of non-class type \xe2\x80\x98int\xe2\x80\x99\n'}
+[7.410226] (lidar_odometry) StderrLine: {'line': b' 1115 |             if (!to_node.is_fixed && delta_poses.find(edge.to_id) != delta_poses.end()) {\n'}
+[7.410262] (lidar_odometry) StderrLine: {'line': b'      |                                                                                  ^~~\n'}
+[7.410398] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1116:28: error: invalid types \xe2\x80\x98int[const int]\xe2\x80\x99 for array subscript\n'}
+[7.410452] (lidar_odometry) StderrLine: {'line': b' 1116 |                 delta_poses[edge.to_id] += learning_rate * error;\n'}
+[7.410497] (lidar_odometry) StderrLine: {'line': b'      |                            ^\n'}
+[7.412779] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: error: \xe2\x80\x98begin\xe2\x80\x99 was not declared in this scope\n'}
+[7.412899] (lidar_odometry) StderrLine: {'line': b' 1121 |         for (auto& [id, delta] : delta_poses) {\n'}
+[7.412945] (lidar_odometry) StderrLine: {'line': b'      |                                  ^~~~~~~~~~~\n'}
+[7.413055] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: note: suggested alternatives:\n'}
+[7.414311] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/c++/11/string:54,\n'}
+[7.414387] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/locale_classes.h:40,\n'}
+[7.414446] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/ios_base.h:41,\n'}
+[7.414493] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/ios:42,\n'}
+[7.414534] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/istream:38,\n'}
+[7.414595] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/sstream:38,\n'}
+[7.414635] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/complex:45,\n'}
+[7.414670] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/eigen3/Eigen/Core:50,\n'}
+[7.414706] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:4,\n'}
+[7.414753] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.414808] (lidar_odometry) StderrLine: {'line': b'/usr/include/c++/11/bits/range_access.h:108:37: note:   \xe2\x80\x98std::begin\xe2\x80\x99\n'}
+[7.414844] (lidar_odometry) StderrLine: {'line': b'  108 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&) noexcept;\n'}
+[7.414884] (lidar_odometry) StderrLine: {'line': b'      |                                     ^~~~~\n'}
+[7.415238] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/mpl/vector/aux_/begin_end.hpp:21,\n'}
+[7.415300] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector/vector0.hpp:31,\n'}
+[7.415348] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector/vector10.hpp:18,\n'}
+[7.415392] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector/vector20.hpp:18,\n'}
+[7.415451] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector.hpp:36,\n'}
+[7.415490] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/point_struct_traits.h:43,\n'}
+[7.415527] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/type_traits.h:40,\n'}
+[7.415565] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/memory.h:46,\n'}
+[7.415617] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/PCLHeader.h:3,\n'}
+[7.415656] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/point_cloud.h:47,\n'}
+[7.415703] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/io.h:46,\n'}
+[7.415738] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,\n'}
+[7.415775] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:44,\n'}
+[7.415812] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.415852] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.415892] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.415943] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/mpl/begin_end_fwd.hpp:22:38: note:   \xe2\x80\x98boost::mpl::begin\xe2\x80\x99\n'}
+[7.415993] (lidar_odometry) StderrLine: {'line': b'   22 | template< typename Sequence > struct begin;\n'}
+[7.416031] (lidar_odometry) StderrLine: {'line': b'      |                                      ^~~~~\n'}
+[7.416523] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/foreach.hpp:81,\n'}
+[7.416579] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/conversions.h:54,\n'}
+[7.416614] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,\n'}
+[7.416671] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/io.h:538,\n'}
+[7.416716] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,\n'}
+[7.416769] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:44,\n'}
+[7.416818] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.416869] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.416948] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.416992] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/range/begin.hpp:110:61: note:   \xe2\x80\x98boost::range_adl_barrier::begin\xe2\x80\x99\n'}
+[7.417027] (lidar_odometry) StderrLine: {'line': b'  110 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type begin( const T& r )\n'}
+[7.417076] (lidar_odometry) StderrLine: {'line': b'      |                                                             ^~~~~\n'}
+[7.417389] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/pcl-1.12/pcl/conversions.h:54,\n'}
+[7.417450] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,\n'}
+[7.417488] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/io.h:538,\n'}
+[7.417540] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,\n'}
+[7.417587] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:44,\n'}
+[7.417652] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.417690] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.417741] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.417782] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/foreach.hpp:696:1: note:   \xe2\x80\x98boost::foreach_detail_::begin\xe2\x80\x99\n'}
+[7.417840] (lidar_odometry) StderrLine: {'line': b'  696 | begin(auto_any_t col, type2type<T *, C> *, boost::mpl::true_ *) // null-terminated C-style strings\n'}
+[7.417875] (lidar_odometry) StderrLine: {'line': b'      | ^~~~~\n'}
+[7.418121] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/fusion/iterator/segmented_iterator.hpp:13,\n'}
+[7.418175] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp:12,\n'}
+[7.418211] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/sequence/intrinsic/end.hpp:18,\n'}
+[7.418259] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl/back.hpp:12,\n'}
+[7.418323] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl.hpp:15,\n'}
+[7.418362] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/include/mpl.hpp:12,\n'}
+[7.418420] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,\n'}
+[7.418475] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/centroid.h:955,\n'}
+[7.418518] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/transforms.h:44,\n'}
+[7.418552] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,\n'}
+[7.418601] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/registration.h:46,\n'}
+[7.418637] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:46,\n'}
+[7.418672] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.418712] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.418760] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.418811] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/fusion/sequence/intrinsic/begin.hpp:92:5: note:   \xe2\x80\x98boost::fusion::begin\xe2\x80\x99\n'}
+[7.418847] (lidar_odometry) StderrLine: {'line': b'   92 |     begin(Sequence const& seq)\n'}
+[7.418897] (lidar_odometry) StderrLine: {'line': b'      |     ^~~~~\n'}
+[7.419103] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp:16,\n'}
+[7.419157] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl/at.hpp:12,\n'}
+[7.419200] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl.hpp:14,\n'}
+[7.419248] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/include/mpl.hpp:12,\n'}
+[7.419286] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,\n'}
+[7.419322] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/centroid.h:955,\n'}
+[7.419368] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/transforms.h:44,\n'}
+[7.419410] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,\n'}
+[7.419446] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/registration.h:46,\n'}
+[7.419486] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:46,\n'}
+[7.419540] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.419611] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.419654] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.419732] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/fusion/sequence/intrinsic_fwd.hpp:62:16: note:   \xe2\x80\x98boost::fusion::result_of::begin\xe2\x80\x99\n'}
+[7.419778] (lidar_odometry) StderrLine: {'line': b'   62 |         struct begin;\n'}
+[7.419824] (lidar_odometry) StderrLine: {'line': b'      |                ^~~~~\n'}
+[7.420815] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: error: \xe2\x80\x98end\xe2\x80\x99 was not declared in this scope\n'}
+[7.420880] (lidar_odometry) StderrLine: {'line': b' 1121 |         for (auto& [id, delta] : delta_poses) {\n'}
+[7.420935] (lidar_odometry) StderrLine: {'line': b'      |                                  ^~~~~~~~~~~\n'}
+[7.421056] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: note: suggested alternatives:\n'}
+[7.421293] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/c++/11/string:54,\n'}
+[7.421341] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/locale_classes.h:40,\n'}
+[7.421376] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/ios_base.h:41,\n'}
+[7.421435] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/ios:42,\n'}
+[7.421483] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/istream:38,\n'}
+[7.421529] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/sstream:38,\n'}
+[7.421571] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/c++/11/complex:45,\n'}
+[7.421615] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/eigen3/Eigen/Core:50,\n'}
+[7.421651] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:4,\n'}
+[7.421686] (-) TimerEvent: {}
+[7.421698] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.421735] (lidar_odometry) StderrLine: {'line': b'/usr/include/c++/11/bits/range_access.h:110:37: note:   \xe2\x80\x98std::end\xe2\x80\x99\n'}
+[7.421770] (lidar_odometry) StderrLine: {'line': b'  110 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&) noexcept;\n'}
+[7.421806] (lidar_odometry) StderrLine: {'line': b'      |                                     ^~~\n'}
+[7.422027] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/eigen3/Eigen/Core:265,\n'}
+[7.422073] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:4,\n'}
+[7.422138] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.422189] (lidar_odometry) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:181:40: note:   \xe2\x80\x98Eigen::placeholders::end\xe2\x80\x99\n'}
+[7.422229] (lidar_odometry) StderrLine: {'line': b'  181 |   EIGEN_DEPRECATED static const end_t  end  = Eigen::lastp1; // PLEASE use Eigen::lastp1 instead of Eigen::placeholders::end\n'}
+[7.422277] (lidar_odometry) StderrLine: {'line': b'      |                                        ^~~\n'}
+[7.422491] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/mpl/vector/aux_/begin_end.hpp:21,\n'}
+[7.422554] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector/vector0.hpp:31,\n'}
+[7.422592] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector/vector10.hpp:18,\n'}
+[7.422632] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector/vector20.hpp:18,\n'}
+[7.422669] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/mpl/vector.hpp:36,\n'}
+[7.422718] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/point_struct_traits.h:43,\n'}
+[7.422762] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/type_traits.h:40,\n'}
+[7.422798] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/memory.h:46,\n'}
+[7.422834] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/PCLHeader.h:3,\n'}
+[7.422881] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/point_cloud.h:47,\n'}
+[7.422936] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/io.h:46,\n'}
+[7.422973] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,\n'}
+[7.423035] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:44,\n'}
+[7.423071] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.423106] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.423143] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.423192] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/mpl/begin_end_fwd.hpp:23:38: note:   \xe2\x80\x98boost::mpl::end\xe2\x80\x99\n'}
+[7.423235] (lidar_odometry) StderrLine: {'line': b'   23 | template< typename Sequence > struct end;\n'}
+[7.423279] (lidar_odometry) StderrLine: {'line': b'      |                                      ^~~\n'}
+[7.423520] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/foreach.hpp:80,\n'}
+[7.423567] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/conversions.h:54,\n'}
+[7.423603] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,\n'}
+[7.423645] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/io.h:538,\n'}
+[7.423688] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,\n'}
+[7.423752] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:44,\n'}
+[7.423790] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.423840] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.423887] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.423922] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/range/end.hpp:104:61: note:   \xe2\x80\x98boost::range_adl_barrier::end\xe2\x80\x99\n'}
+[7.423957] (lidar_odometry) StderrLine: {'line': b'  104 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )\n'}
+[7.423994] (lidar_odometry) StderrLine: {'line': b'      |                                                             ^~~\n'}
+[7.424147] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/pcl-1.12/pcl/conversions.h:54,\n'}
+[7.424197] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,\n'}
+[7.424234] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/io.h:538,\n'}
+[7.424279] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,\n'}
+[7.424314] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:44,\n'}
+[7.424350] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.424385] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.424469] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.424542] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/foreach.hpp:736:1: note:   \xe2\x80\x98boost::foreach_detail_::end\xe2\x80\x99\n'}
+[7.424601] (lidar_odometry) StderrLine: {'line': b'  736 | end(auto_any_t, type2type<T *, C> *, boost::mpl::true_ *) // null-terminated C-style strings\n'}
+[7.424649] (lidar_odometry) StderrLine: {'line': b'      | ^~~\n'}
+[7.424933] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/fusion/mpl/back.hpp:12,\n'}
+[7.425012] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl.hpp:15,\n'}
+[7.425076] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/include/mpl.hpp:12,\n'}
+[7.425121] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,\n'}
+[7.425158] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/centroid.h:955,\n'}
+[7.425222] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/transforms.h:44,\n'}
+[7.425280] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,\n'}
+[7.425322] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/registration.h:46,\n'}
+[7.425368] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:46,\n'}
+[7.425422] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.425462] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.425497] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.425532] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/fusion/sequence/intrinsic/end.hpp:92:5: note:   \xe2\x80\x98boost::fusion::end\xe2\x80\x99\n'}
+[7.425568] (lidar_odometry) StderrLine: {'line': b'   92 |     end(Sequence const& seq)\n'}
+[7.425604] (lidar_odometry) StderrLine: {'line': b'      |     ^~~\n'}
+[7.426323] (lidar_odometry) StderrLine: {'line': b'In file included from /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp:16,\n'}
+[7.426385] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl/at.hpp:12,\n'}
+[7.426422] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/mpl.hpp:14,\n'}
+[7.426470] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/boost/fusion/include/mpl.hpp:12,\n'}
+[7.426509] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,\n'}
+[7.426545] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/centroid.h:955,\n'}
+[7.426582] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/common/transforms.h:44,\n'}
+[7.426618] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,\n'}
+[7.426654] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/registration.h:46,\n'}
+[7.426699] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/icp.h:46,\n'}
+[7.426738] (lidar_odometry) StderrLine: {'line': b'                 from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,\n'}
+[7.426786] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,\n'}
+[7.426823] (lidar_odometry) StderrLine: {'line': b'                 from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:\n'}
+[7.426874] (lidar_odometry) StderrLine: {'line': b'/usr/include/boost/fusion/sequence/intrinsic_fwd.hpp:68:16: note:   \xe2\x80\x98boost::fusion::result_of::end\xe2\x80\x99\n'}
+[7.426909] (lidar_odometry) StderrLine: {'line': b'   68 |         struct end;\n'}
+[7.426958] (lidar_odometry) StderrLine: {'line': b'      |                ^~~\n'}
+[7.426995] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1126:58: error: expected primary-expression before \xe2\x80\x98)\xe2\x80\x99 token\n'}
+[7.427033] (lidar_odometry) StderrLine: {'line': b' 1126 |                 node.pose.translation() += delta.head<3>();\n'}
+[7.427069] (lidar_odometry) StderrLine: {'line': b'      |                                                          ^\n'}
+[7.427165] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1129:64: error: expected primary-expression before \xe2\x80\x98)\xe2\x80\x99 token\n'}
+[7.427242] (lidar_odometry) StderrLine: {'line': b' 1129 |                 Eigen::Vector3d rotation_delta = delta.tail<3>();\n'}
+[7.427298] (lidar_odometry) StderrLine: {'line': b'      |                                                                ^\n'}
+[7.449096] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function \xe2\x80\x98Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Matrix4d&, bool)\xe2\x80\x99:\n'}
+[7.449202] (lidar_odometry) StderrLine: {'line': b'/home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1144:94: warning: unused parameter \xe2\x80\x98transform\xe2\x80\x99 [-Wunused-parameter]\n'}
+[7.449248] (lidar_odometry) StderrLine: {'line': b' 1144 | Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Eigen::Matrix4d& transform, bool is_loop_closure)\n'}
+[7.449287] (lidar_odometry) StderrLine: {'line': b'      |                                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n'}
+[7.522053] (-) TimerEvent: {}
+[7.622306] (-) TimerEvent: {}
+[7.722487] (-) TimerEvent: {}
+[7.822662] (-) TimerEvent: {}
+[7.922833] (-) TimerEvent: {}
+[8.023007] (-) TimerEvent: {}
+[8.123193] (-) TimerEvent: {}
+[8.223392] (-) TimerEvent: {}
+[8.323563] (-) TimerEvent: {}
+[8.423740] (-) TimerEvent: {}
+[8.523919] (-) TimerEvent: {}
+[8.624087] (-) TimerEvent: {}
+[8.724250] (-) TimerEvent: {}
+[8.824436] (-) TimerEvent: {}
+[8.924689] (-) TimerEvent: {}
+[9.024921] (-) TimerEvent: {}
+[9.125327] (-) TimerEvent: {}
+[9.225593] (-) TimerEvent: {}
+[9.326121] (-) TimerEvent: {}
+[9.426517] (-) TimerEvent: {}
+[9.526691] (-) TimerEvent: {}
+[9.626874] (-) TimerEvent: {}
+[9.727574] (-) TimerEvent: {}
+[9.827761] (-) TimerEvent: {}
+[9.927948] (-) TimerEvent: {}
+[10.028135] (-) TimerEvent: {}
+[10.132817] (-) TimerEvent: {}
+[10.233109] (-) TimerEvent: {}
+[10.333296] (-) TimerEvent: {}
+[10.433486] (-) TimerEvent: {}
+[10.533684] (-) TimerEvent: {}
+[10.633888] (-) TimerEvent: {}
+[10.734069] (-) TimerEvent: {}
+[10.834254] (-) TimerEvent: {}
+[10.934432] (-) TimerEvent: {}
+[11.034620] (-) TimerEvent: {}
+[11.134819] (-) TimerEvent: {}
+[11.235000] (-) TimerEvent: {}
+[11.335189] (-) TimerEvent: {}
+[11.435503] (-) TimerEvent: {}
+[11.535668] (-) TimerEvent: {}
+[11.635845] (-) TimerEvent: {}
+[11.736120] (-) TimerEvent: {}
+[11.836354] (-) TimerEvent: {}
+[11.936799] (-) TimerEvent: {}
+[12.037091] (-) TimerEvent: {}
+[12.137386] (-) TimerEvent: {}
+[12.238456] (-) TimerEvent: {}
+[12.338796] (-) TimerEvent: {}
+[12.438969] (-) TimerEvent: {}
+[12.539152] (-) TimerEvent: {}
+[12.639498] (-) TimerEvent: {}
+[12.739685] (-) TimerEvent: {}
+[12.839861] (-) TimerEvent: {}
+[12.940098] (-) TimerEvent: {}
+[13.040283] (-) TimerEvent: {}
+[13.140511] (-) TimerEvent: {}
+[13.240700] (-) TimerEvent: {}
+[13.340924] (-) TimerEvent: {}
+[13.441111] (-) TimerEvent: {}
+[13.541304] (-) TimerEvent: {}
+[13.641488] (-) TimerEvent: {}
+[13.741683] (-) TimerEvent: {}
+[13.841882] (-) TimerEvent: {}
+[13.944821] (-) TimerEvent: {}
+[14.045028] (-) TimerEvent: {}
+[14.147463] (-) TimerEvent: {}
+[14.247775] (-) TimerEvent: {}
+[14.347980] (-) TimerEvent: {}
+[14.448495] (-) TimerEvent: {}
+[14.548806] (-) TimerEvent: {}
+[14.649104] (-) TimerEvent: {}
+[14.751967] (-) TimerEvent: {}
+[14.852291] (-) TimerEvent: {}
+[14.952460] (-) TimerEvent: {}
+[15.055998] (-) TimerEvent: {}
+[15.156163] (-) TimerEvent: {}
+[15.256379] (-) TimerEvent: {}
+[15.356658] (-) TimerEvent: {}
+[15.458638] (-) TimerEvent: {}
+[15.558835] (-) TimerEvent: {}
+[15.659085] (-) TimerEvent: {}
+[15.759250] (-) TimerEvent: {}
+[15.859430] (-) TimerEvent: {}
+[15.959619] (-) TimerEvent: {}
+[16.059802] (-) TimerEvent: {}
+[16.160025] (-) TimerEvent: {}
+[16.260250] (-) TimerEvent: {}
+[16.360439] (-) TimerEvent: {}
+[16.460644] (-) TimerEvent: {}
+[16.560823] (-) TimerEvent: {}
+[16.661034] (-) TimerEvent: {}
+[16.761282] (-) TimerEvent: {}
+[16.861570] (-) TimerEvent: {}
+[16.961784] (-) TimerEvent: {}
+[17.061984] (-) TimerEvent: {}
+[17.162384] (-) TimerEvent: {}
+[17.262762] (-) TimerEvent: {}
+[17.363242] (-) TimerEvent: {}
+[17.463546] (-) TimerEvent: {}
+[17.563709] (-) TimerEvent: {}
+[17.663907] (-) TimerEvent: {}
+[17.764111] (-) TimerEvent: {}
+[17.864316] (-) TimerEvent: {}
+[17.971449] (-) TimerEvent: {}
+[18.071642] (-) TimerEvent: {}
+[18.176796] (-) TimerEvent: {}
+[18.277007] (-) TimerEvent: {}
+[18.380815] (-) TimerEvent: {}
+[18.481019] (-) TimerEvent: {}
+[18.589779] (-) TimerEvent: {}
+[18.690022] (-) TimerEvent: {}
+[18.790498] (-) TimerEvent: {}
+[18.891076] (-) TimerEvent: {}
+[18.991453] (-) TimerEvent: {}
+[19.091687] (-) TimerEvent: {}
+[19.191910] (-) TimerEvent: {}
+[19.292275] (-) TimerEvent: {}
+[19.392500] (-) TimerEvent: {}
+[19.492745] (-) TimerEvent: {}
+[19.592948] (-) TimerEvent: {}
+[19.693181] (-) TimerEvent: {}
+[19.794130] (-) TimerEvent: {}
+[19.894646] (-) TimerEvent: {}
+[19.995069] (-) TimerEvent: {}
+[20.095515] (-) TimerEvent: {}
+[20.195799] (-) TimerEvent: {}
+[20.296007] (-) TimerEvent: {}
+[20.396229] (-) TimerEvent: {}
+[20.499397] (-) TimerEvent: {}
+[20.600817] (-) TimerEvent: {}
+[20.701037] (-) TimerEvent: {}
+[20.803510] (-) TimerEvent: {}
+[20.908794] (-) TimerEvent: {}
+[21.016880] (-) TimerEvent: {}
+[21.117172] (-) TimerEvent: {}
+[21.217703] (-) TimerEvent: {}
+[21.317999] (-) TimerEvent: {}
+[21.419088] (-) TimerEvent: {}
+[21.519514] (-) TimerEvent: {}
+[21.619736] (-) TimerEvent: {}
+[21.719946] (-) TimerEvent: {}
+[21.824015] (-) TimerEvent: {}
+[21.924319] (-) TimerEvent: {}
+[22.024558] (-) TimerEvent: {}
+[22.124772] (-) TimerEvent: {}
+[22.224972] (-) TimerEvent: {}
+[22.327556] (-) TimerEvent: {}
+[22.427788] (-) TimerEvent: {}
+[22.528073] (-) TimerEvent: {}
+[22.628374] (-) TimerEvent: {}
+[22.728907] (-) TimerEvent: {}
+[22.831532] (-) TimerEvent: {}
+[22.932048] (-) TimerEvent: {}
+[23.032303] (-) TimerEvent: {}
+[23.132603] (-) TimerEvent: {}
+[23.236866] (-) TimerEvent: {}
+[23.337503] (-) TimerEvent: {}
+[23.439040] (-) TimerEvent: {}
+[23.539323] (-) TimerEvent: {}
+[23.639539] (-) TimerEvent: {}
+[23.739800] (-) TimerEvent: {}
+[23.840041] (-) TimerEvent: {}
+[23.940909] (-) TimerEvent: {}
+[24.041439] (-) TimerEvent: {}
+[24.141663] (-) TimerEvent: {}
+[24.241930] (-) TimerEvent: {}
+[24.342143] (-) TimerEvent: {}
+[24.442377] (-) TimerEvent: {}
+[24.542571] (-) TimerEvent: {}
+[24.642759] (-) TimerEvent: {}
+[24.742966] (-) TimerEvent: {}
+[24.843170] (-) TimerEvent: {}
+[24.943383] (-) TimerEvent: {}
+[25.043621] (-) TimerEvent: {}
+[25.143862] (-) TimerEvent: {}
+[25.244725] (-) TimerEvent: {}
+[25.345581] (-) TimerEvent: {}
+[25.445958] (-) TimerEvent: {}
+[25.546123] (-) TimerEvent: {}
+[25.646288] (-) TimerEvent: {}
+[25.746470] (-) TimerEvent: {}
+[25.846675] (-) TimerEvent: {}
+[25.946889] (-) TimerEvent: {}
+[26.047060] (-) TimerEvent: {}
+[26.147252] (-) TimerEvent: {}
+[26.247481] (-) TimerEvent: {}
+[26.347668] (-) TimerEvent: {}
+[26.447853] (-) TimerEvent: {}
+[26.548047] (-) TimerEvent: {}
+[26.648265] (-) TimerEvent: {}
+[26.748450] (-) TimerEvent: {}
+[26.848610] (-) TimerEvent: {}
+[26.951942] (-) TimerEvent: {}
+[27.052375] (-) TimerEvent: {}
+[27.152645] (-) TimerEvent: {}
+[27.252800] (-) TimerEvent: {}
+[27.353281] (-) TimerEvent: {}
+[27.453638] (-) TimerEvent: {}
+[27.553836] (-) TimerEvent: {}
+[27.654021] (-) TimerEvent: {}
+[27.754197] (-) TimerEvent: {}
+[27.854372] (-) TimerEvent: {}
+[27.954561] (-) TimerEvent: {}
+[28.054765] (-) TimerEvent: {}
+[28.154995] (-) TimerEvent: {}
+[28.255286] (-) TimerEvent: {}
+[28.355512] (-) TimerEvent: {}
+[28.455688] (-) TimerEvent: {}
+[28.555854] (-) TimerEvent: {}
+[28.656011] (-) TimerEvent: {}
+[28.756222] (-) TimerEvent: {}
+[28.856519] (-) TimerEvent: {}
+[28.956791] (-) TimerEvent: {}
+[29.057033] (-) TimerEvent: {}
+[29.157226] (-) TimerEvent: {}
+[29.257654] (-) TimerEvent: {}
+[29.357915] (-) TimerEvent: {}
+[29.458102] (-) TimerEvent: {}
+[29.558587] (-) TimerEvent: {}
+[29.658950] (-) TimerEvent: {}
+[29.759252] (-) TimerEvent: {}
+[29.859445] (-) TimerEvent: {}
+[29.959624] (-) TimerEvent: {}
+[30.078151] (-) TimerEvent: {}
+[30.185669] (-) TimerEvent: {}
+[30.285860] (-) TimerEvent: {}
+[30.386068] (-) TimerEvent: {}
+[30.486250] (-) TimerEvent: {}
+[30.588812] (-) TimerEvent: {}
+[30.688981] (-) TimerEvent: {}
+[30.789164] (-) TimerEvent: {}
+[30.889348] (-) TimerEvent: {}
+[30.989561] (-) TimerEvent: {}
+[31.089841] (-) TimerEvent: {}
+[31.190059] (-) TimerEvent: {}
+[31.293200] (-) TimerEvent: {}
+[31.393546] (-) TimerEvent: {}
+[31.494006] (-) TimerEvent: {}
+[31.594371] (-) TimerEvent: {}
+[31.694586] (-) TimerEvent: {}
+[31.794770] (-) TimerEvent: {}
+[31.894967] (-) TimerEvent: {}
+[31.998001] (-) TimerEvent: {}
+[32.098179] (-) TimerEvent: {}
+[32.199767] (-) TimerEvent: {}
+[32.299954] (-) TimerEvent: {}
+[32.400102] (-) TimerEvent: {}
+[32.500273] (-) TimerEvent: {}
+[32.600472] (-) TimerEvent: {}
+[32.700820] (-) TimerEvent: {}
+[32.801122] (-) TimerEvent: {}
+[32.901352] (-) TimerEvent: {}
+[33.001872] (-) TimerEvent: {}
+[33.102210] (-) TimerEvent: {}
+[33.202414] (-) TimerEvent: {}
+[33.302845] (-) TimerEvent: {}
+[33.403141] (-) TimerEvent: {}
+[33.503307] (-) TimerEvent: {}
+[33.603506] (-) TimerEvent: {}
+[33.703711] (-) TimerEvent: {}
+[33.803910] (-) TimerEvent: {}
+[33.904140] (-) TimerEvent: {}
+[34.004420] (-) TimerEvent: {}
+[34.104638] (-) TimerEvent: {}
+[34.204809] (-) TimerEvent: {}
+[34.304995] (-) TimerEvent: {}
+[34.408797] (-) TimerEvent: {}
+[34.508998] (-) TimerEvent: {}
+[34.609260] (-) TimerEvent: {}
+[34.709499] (-) TimerEvent: {}
+[34.810399] (-) TimerEvent: {}
+[34.910651] (-) TimerEvent: {}
+[35.010818] (-) TimerEvent: {}
+[35.111008] (-) TimerEvent: {}
+[35.211407] (-) TimerEvent: {}
+[35.311645] (-) TimerEvent: {}
+[35.411826] (-) TimerEvent: {}
+[35.512261] (-) TimerEvent: {}
+[35.612689] (-) TimerEvent: {}
+[35.712931] (-) TimerEvent: {}
+[35.813364] (-) TimerEvent: {}
+[35.913595] (-) TimerEvent: {}
+[36.013863] (-) TimerEvent: {}
+[36.114116] (-) TimerEvent: {}
+[36.214464] (-) TimerEvent: {}
+[36.314789] (-) TimerEvent: {}
+[36.415081] (-) TimerEvent: {}
+[36.515361] (-) TimerEvent: {}
+[36.615560] (-) TimerEvent: {}
+[36.717032] (-) TimerEvent: {}
+[36.795594] (lidar_odometry) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lidar_odometry_node.dir/build.make:90: CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o] Error 1\n'}
+[36.804123] (lidar_odometry) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/lidar_odometry_node.dir/all] Error 2\n'}
+[36.808897] (lidar_odometry) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[36.817658] (-) TimerEvent: {}
+[36.925197] (lidar_odometry) CommandEnded: {'returncode': 2}
+[36.979808] (-) TimerEvent: {}
+[37.081524] (-) TimerEvent: {}
+[37.138789] (lidar_odometry) JobEnded: {'identifier': 'lidar_odometry', 'rc': 2}
+[37.150520] (-) EventReactorShutdown: {}

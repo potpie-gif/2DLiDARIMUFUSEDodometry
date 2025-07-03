@@ -1,0 +1,30 @@
+[0.009s] Invoking command in '/home/por/ros2_ws/build/lidar_robot_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_robot_simulation -- -j2 -l2
+[0.045s] Invoked command in '/home/por/ros2_ws/build/lidar_robot_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_robot_simulation -- -j2 -l2
+[0.050s] Invoking command in '/home/por/ros2_ws/build/lidar_robot_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_robot_simulation
+[0.056s] -- Install configuration: ""
+[0.056s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch
+[0.056s] -- Installing: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch/complete_simulation.launch.py
+[0.057s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch/gazebo_simulation.launch.py
+[0.057s] -- Installing: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//launch/simple_simulation.launch.py
+[0.057s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//urdf
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//urdf/lidar_robot.urdf.xacro
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//worlds
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//worlds/simple_world.world
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//config
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation//config/robot_view.rviz
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/ament_index/resource_index/package_run_dependencies/lidar_robot_simulation
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/ament_index/resource_index/parent_prefix_path/lidar_robot_simulation
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/ament_prefix_path.sh
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/ament_prefix_path.dsv
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/path.sh
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/environment/path.dsv
+[0.059s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.bash
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.sh
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.zsh
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/local_setup.dsv
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.dsv
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/ament_index/resource_index/packages/lidar_robot_simulation
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/cmake/lidar_robot_simulationConfig.cmake
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/cmake/lidar_robot_simulationConfig-version.cmake
+[0.060s] -- Up-to-date: /home/por/ros2_ws/install/lidar_robot_simulation/share/lidar_robot_simulation/package.xml
+[0.066s] Invoked command in '/home/por/ros2_ws/build/lidar_robot_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/por/ros2_ws/build/lidar_robot_simulation

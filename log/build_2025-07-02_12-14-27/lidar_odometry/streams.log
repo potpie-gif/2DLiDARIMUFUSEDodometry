@@ -1,0 +1,266 @@
+[0.008s] Invoking command in '/home/por/ros2_ws/build/lidar_odometry': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+[0.065s] [ 40%] Built target qr_test_publisher
+[0.087s] Consolidate compiler generated dependencies of target lidar_odometry_node
+[0.107s] [ 60%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry_node.cpp.o
+[0.110s] [ 80%] Building CXX object CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o
+[6.897s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘void LidarOdometry::process_scan_data(ScanDataPtr)’:
+[6.897s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:144:41: error: ‘target_corrected’ was not declared in this scope
+[6.897s]   144 |                         create_keyframe(target_corrected, state_ptr->pose, scan_ptr->timestamp);
+[6.897s]       |                                         ^~~~~~~~~~~~~~~~
+[6.897s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:147:46: warning: comparison of integer expressions of different signedness: ‘std::vector<LidarOdometry::Keyframe>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+[6.897s]   147 |                         if (keyframes.size() > min_keyframes_between_loops) {
+[6.898s]       |                             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[7.292s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘std::vector<int, std::allocator<int> > LidarOdometry::detect_loop_closure_candidates(const std::vector<float>&)’:
+[7.292s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:932:26: warning: comparison of integer expressions of different signedness: ‘std::vector<LidarOdometry::Keyframe>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+[7.292s]   932 |     if (keyframes.size() < min_keyframes_between_loops) {
+[7.292s]       |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[7.301s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘void LidarOdometry::optimize_pose_graph()’:
+[7.301s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1071:30: error: ‘Vector6d’ is not a member of ‘Eigen’; did you mean ‘VectorXd’?
+[7.301s]  1071 |         std::map<int, Eigen::Vector6d> delta_poses;
+[7.301s]       |                              ^~~~~~~~
+[7.301s]       |                              VectorXd
+[7.301s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1071:38: error: template argument 2 is invalid
+[7.301s]  1071 |         std::map<int, Eigen::Vector6d> delta_poses;
+[7.302s]       |                                      ^
+[7.302s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1071:38: error: template argument 4 is invalid
+[7.327s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1076:28: error: invalid types ‘int[std::tuple_element<0, std::pair<const int, LidarOdometry::PoseNode> >::type {aka const int}]’ for array subscript
+[7.327s]  1076 |                 delta_poses[id] = Eigen::Vector6d::Zero();
+[7.327s]       |                            ^
+[7.327s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1076:42: error: ‘Eigen::Vector6d’ has not been declared
+[7.327s]  1076 |                 delta_poses[id] = Eigen::Vector6d::Zero();
+[7.327s]       |                                          ^~~~~~~~
+[7.389s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1102:20: error: ‘Vector6d’ is not a member of ‘Eigen’; did you mean ‘VectorXd’?
+[7.389s]  1102 |             Eigen::Vector6d error;
+[7.389s]       |                    ^~~~~~~~
+[7.389s]       |                    VectorXd
+[7.407s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1103:13: error: ‘error’ was not declared in this scope; did you mean ‘perror’?
+[7.407s]  1103 |             error.head<3>() = translation_error;
+[7.408s]       |             ^~~~~
+[7.408s]       |             perror
+[7.408s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1103:27: error: expected primary-expression before ‘)’ token
+[7.408s]  1103 |             error.head<3>() = translation_error;
+[7.408s]       |                           ^
+[7.408s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1104:27: error: expected primary-expression before ‘)’ token
+[7.408s]  1104 |             error.tail<3>() = rotation_error_vec;
+[7.408s]       |                           ^
+[7.409s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1112:52: error: request for member ‘find’ in ‘delta_poses’, which is of non-class type ‘int’
+[7.409s]  1112 |             if (!from_node.is_fixed && delta_poses.find(edge.from_id) != delta_poses.end()) {
+[7.409s]       |                                                    ^~~~
+[7.409s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1112:86: error: request for member ‘end’ in ‘delta_poses’, which is of non-class type ‘int’
+[7.409s]  1112 |             if (!from_node.is_fixed && delta_poses.find(edge.from_id) != delta_poses.end()) {
+[7.409s]       |                                                                                      ^~~
+[7.409s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1113:28: error: invalid types ‘int[const int]’ for array subscript
+[7.409s]  1113 |                 delta_poses[edge.from_id] -= learning_rate * error;
+[7.409s]       |                            ^
+[7.409s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1115:50: error: request for member ‘find’ in ‘delta_poses’, which is of non-class type ‘int’
+[7.409s]  1115 |             if (!to_node.is_fixed && delta_poses.find(edge.to_id) != delta_poses.end()) {
+[7.409s]       |                                                  ^~~~
+[7.410s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1115:82: error: request for member ‘end’ in ‘delta_poses’, which is of non-class type ‘int’
+[7.410s]  1115 |             if (!to_node.is_fixed && delta_poses.find(edge.to_id) != delta_poses.end()) {
+[7.410s]       |                                                                                  ^~~
+[7.410s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1116:28: error: invalid types ‘int[const int]’ for array subscript
+[7.410s]  1116 |                 delta_poses[edge.to_id] += learning_rate * error;
+[7.410s]       |                            ^
+[7.412s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: error: ‘begin’ was not declared in this scope
+[7.412s]  1121 |         for (auto& [id, delta] : delta_poses) {
+[7.412s]       |                                  ^~~~~~~~~~~
+[7.413s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: note: suggested alternatives:
+[7.414s] In file included from /usr/include/c++/11/string:54,
+[7.414s]                  from /usr/include/c++/11/bits/locale_classes.h:40,
+[7.414s]                  from /usr/include/c++/11/bits/ios_base.h:41,
+[7.414s]                  from /usr/include/c++/11/ios:42,
+[7.414s]                  from /usr/include/c++/11/istream:38,
+[7.414s]                  from /usr/include/c++/11/sstream:38,
+[7.414s]                  from /usr/include/c++/11/complex:45,
+[7.414s]                  from /usr/include/eigen3/Eigen/Core:50,
+[7.414s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:4,
+[7.414s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.414s] /usr/include/c++/11/bits/range_access.h:108:37: note:   ‘std::begin’
+[7.414s]   108 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&) noexcept;
+[7.414s]       |                                     ^~~~~
+[7.415s] In file included from /usr/include/boost/mpl/vector/aux_/begin_end.hpp:21,
+[7.415s]                  from /usr/include/boost/mpl/vector/vector0.hpp:31,
+[7.415s]                  from /usr/include/boost/mpl/vector/vector10.hpp:18,
+[7.415s]                  from /usr/include/boost/mpl/vector/vector20.hpp:18,
+[7.415s]                  from /usr/include/boost/mpl/vector.hpp:36,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/point_struct_traits.h:43,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/type_traits.h:40,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/memory.h:46,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/PCLHeader.h:3,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/point_cloud.h:47,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/common/io.h:46,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:44,
+[7.415s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.415s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.415s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.415s] /usr/include/boost/mpl/begin_end_fwd.hpp:22:38: note:   ‘boost::mpl::begin’
+[7.415s]    22 | template< typename Sequence > struct begin;
+[7.415s]       |                                      ^~~~~
+[7.416s] In file included from /usr/include/boost/foreach.hpp:81,
+[7.416s]                  from /usr/include/pcl-1.12/pcl/conversions.h:54,
+[7.416s]                  from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,
+[7.416s]                  from /usr/include/pcl-1.12/pcl/common/io.h:538,
+[7.416s]                  from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,
+[7.416s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:44,
+[7.416s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.416s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.416s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.416s] /usr/include/boost/range/begin.hpp:110:61: note:   ‘boost::range_adl_barrier::begin’
+[7.416s]   110 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type begin( const T& r )
+[7.417s]       |                                                             ^~~~~
+[7.417s] In file included from /usr/include/pcl-1.12/pcl/conversions.h:54,
+[7.417s]                  from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,
+[7.417s]                  from /usr/include/pcl-1.12/pcl/common/io.h:538,
+[7.417s]                  from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,
+[7.417s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:44,
+[7.417s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.417s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.417s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.417s] /usr/include/boost/foreach.hpp:696:1: note:   ‘boost::foreach_detail_::begin’
+[7.417s]   696 | begin(auto_any_t col, type2type<T *, C> *, boost::mpl::true_ *) // null-terminated C-style strings
+[7.417s]       | ^~~~~
+[7.418s] In file included from /usr/include/boost/fusion/iterator/segmented_iterator.hpp:13,
+[7.418s]                  from /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end.hpp:12,
+[7.418s]                  from /usr/include/boost/fusion/sequence/intrinsic/end.hpp:18,
+[7.418s]                  from /usr/include/boost/fusion/mpl/back.hpp:12,
+[7.418s]                  from /usr/include/boost/fusion/mpl.hpp:15,
+[7.418s]                  from /usr/include/boost/fusion/include/mpl.hpp:12,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/common/centroid.h:955,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/common/transforms.h:44,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/registration/registration.h:46,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:46,
+[7.418s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.418s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.418s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.418s] /usr/include/boost/fusion/sequence/intrinsic/begin.hpp:92:5: note:   ‘boost::fusion::begin’
+[7.418s]    92 |     begin(Sequence const& seq)
+[7.418s]       |     ^~~~~
+[7.419s] In file included from /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp:16,
+[7.419s]                  from /usr/include/boost/fusion/mpl/at.hpp:12,
+[7.419s]                  from /usr/include/boost/fusion/mpl.hpp:14,
+[7.419s]                  from /usr/include/boost/fusion/include/mpl.hpp:12,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/common/centroid.h:955,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/common/transforms.h:44,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/registration/registration.h:46,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:46,
+[7.419s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.419s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.419s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.419s] /usr/include/boost/fusion/sequence/intrinsic_fwd.hpp:62:16: note:   ‘boost::fusion::result_of::begin’
+[7.419s]    62 |         struct begin;
+[7.419s]       |                ^~~~~
+[7.420s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: error: ‘end’ was not declared in this scope
+[7.420s]  1121 |         for (auto& [id, delta] : delta_poses) {
+[7.420s]       |                                  ^~~~~~~~~~~
+[7.421s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1121:34: note: suggested alternatives:
+[7.421s] In file included from /usr/include/c++/11/string:54,
+[7.421s]                  from /usr/include/c++/11/bits/locale_classes.h:40,
+[7.421s]                  from /usr/include/c++/11/bits/ios_base.h:41,
+[7.421s]                  from /usr/include/c++/11/ios:42,
+[7.421s]                  from /usr/include/c++/11/istream:38,
+[7.421s]                  from /usr/include/c++/11/sstream:38,
+[7.421s]                  from /usr/include/c++/11/complex:45,
+[7.421s]                  from /usr/include/eigen3/Eigen/Core:50,
+[7.421s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:4,
+[7.421s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.421s] /usr/include/c++/11/bits/range_access.h:110:37: note:   ‘std::end’
+[7.421s]   110 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&) noexcept;
+[7.421s]       |                                     ^~~
+[7.421s] In file included from /usr/include/eigen3/Eigen/Core:265,
+[7.422s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:4,
+[7.422s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.422s] /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:181:40: note:   ‘Eigen::placeholders::end’
+[7.422s]   181 |   EIGEN_DEPRECATED static const end_t  end  = Eigen::lastp1; // PLEASE use Eigen::lastp1 instead of Eigen::placeholders::end
+[7.422s]       |                                        ^~~
+[7.422s] In file included from /usr/include/boost/mpl/vector/aux_/begin_end.hpp:21,
+[7.422s]                  from /usr/include/boost/mpl/vector/vector0.hpp:31,
+[7.422s]                  from /usr/include/boost/mpl/vector/vector10.hpp:18,
+[7.422s]                  from /usr/include/boost/mpl/vector/vector20.hpp:18,
+[7.422s]                  from /usr/include/boost/mpl/vector.hpp:36,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/point_struct_traits.h:43,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/type_traits.h:40,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/memory.h:46,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/PCLHeader.h:3,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/point_cloud.h:47,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/common/io.h:46,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,
+[7.422s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:44,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.423s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.423s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.423s] /usr/include/boost/mpl/begin_end_fwd.hpp:23:38: note:   ‘boost::mpl::end’
+[7.423s]    23 | template< typename Sequence > struct end;
+[7.423s]       |                                      ^~~
+[7.423s] In file included from /usr/include/boost/foreach.hpp:80,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/conversions.h:54,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/common/io.h:538,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:44,
+[7.423s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.423s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.423s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.423s] /usr/include/boost/range/end.hpp:104:61: note:   ‘boost::range_adl_barrier::end’
+[7.423s]   104 | inline BOOST_DEDUCED_TYPENAME range_iterator<const T>::type end( const T& r )
+[7.423s]       |                                                             ^~~
+[7.424s] In file included from /usr/include/pcl-1.12/pcl/conversions.h:54,
+[7.424s]                  from /usr/include/pcl-1.12/pcl/common/impl/io.hpp:43,
+[7.424s]                  from /usr/include/pcl-1.12/pcl/common/io.h:538,
+[7.424s]                  from /usr/include/pcl-1.12/pcl/registration/correspondence_estimation.h:43,
+[7.424s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:44,
+[7.424s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.424s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.424s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.424s] /usr/include/boost/foreach.hpp:736:1: note:   ‘boost::foreach_detail_::end’
+[7.424s]   736 | end(auto_any_t, type2type<T *, C> *, boost::mpl::true_ *) // null-terminated C-style strings
+[7.424s]       | ^~~
+[7.424s] In file included from /usr/include/boost/fusion/mpl/back.hpp:12,
+[7.424s]                  from /usr/include/boost/fusion/mpl.hpp:15,
+[7.425s]                  from /usr/include/boost/fusion/include/mpl.hpp:12,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/common/centroid.h:955,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/common/transforms.h:44,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/registration/registration.h:46,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:46,
+[7.425s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.425s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.425s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.425s] /usr/include/boost/fusion/sequence/intrinsic/end.hpp:92:5: note:   ‘boost::fusion::end’
+[7.425s]    92 |     end(Sequence const& seq)
+[7.425s]       |     ^~~
+[7.426s] In file included from /usr/include/boost/fusion/sequence/intrinsic/value_at.hpp:16,
+[7.426s]                  from /usr/include/boost/fusion/mpl/at.hpp:12,
+[7.426s]                  from /usr/include/boost/fusion/mpl.hpp:14,
+[7.426s]                  from /usr/include/boost/fusion/include/mpl.hpp:12,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/common/impl/accumulators.hpp:44,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/common/centroid.h:955,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/common/transforms.h:44,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/registration/transformation_estimation.h:43,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/registration/registration.h:46,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/registration/icp.h:46,
+[7.426s]                  from /usr/include/pcl-1.12/pcl/registration/gicp.h:44,
+[7.426s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/include/lidar_odometry/lidar_odometry.hpp:6,
+[7.426s]                  from /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:2:
+[7.426s] /usr/include/boost/fusion/sequence/intrinsic_fwd.hpp:68:16: note:   ‘boost::fusion::result_of::end’
+[7.426s]    68 |         struct end;
+[7.426s]       |                ^~~
+[7.426s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1126:58: error: expected primary-expression before ‘)’ token
+[7.426s]  1126 |                 node.pose.translation() += delta.head<3>();
+[7.427s]       |                                                          ^
+[7.427s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1129:64: error: expected primary-expression before ‘)’ token
+[7.427s]  1129 |                 Eigen::Vector3d rotation_delta = delta.tail<3>();
+[7.427s]       |                                                                ^
+[7.449s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp: In member function ‘Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Matrix4d&, bool)’:
+[7.449s] /home/por/ros2_ws/src/Simple-2D-LiDAR-Odometry/src/lidar_odometry.cpp:1144:94: warning: unused parameter ‘transform’ [-Wunused-parameter]
+[7.449s]  1144 | Eigen::Matrix<double, 6, 6> LidarOdometry::compute_information_matrix(const Eigen::Matrix4d& transform, bool is_loop_closure)
+[7.449s]       |                                                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[36.799s] gmake[2]: *** [CMakeFiles/lidar_odometry_node.dir/build.make:90: CMakeFiles/lidar_odometry_node.dir/src/lidar_odometry.cpp.o] Error 1
+[36.804s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/lidar_odometry_node.dir/all] Error 2
+[36.808s] gmake: *** [Makefile:146: all] Error 2
+[36.945s] Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2

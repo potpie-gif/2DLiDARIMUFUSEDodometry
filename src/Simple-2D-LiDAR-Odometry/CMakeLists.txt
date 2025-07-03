@@ -17,6 +17,8 @@ find_package(laser_geometry REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_eigen REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -37,6 +39,14 @@ ament_target_dependencies(lidar_odometry_node
   pcl_conversions
   tf2
   tf2_eigen
+  std_msgs
+  visualization_msgs
+)
+
+add_executable(qr_test_publisher src/qr_test_publisher.cpp)
+ament_target_dependencies(qr_test_publisher
+  rclcpp
+  std_msgs
 )
 
 target_include_directories(lidar_odometry_node PUBLIC
@@ -46,7 +56,7 @@ target_include_directories(lidar_odometry_node PUBLIC
 target_link_libraries(lidar_odometry_node
   ${PCL_LIBRARIES}
 )
-install(TARGETS lidar_odometry_node
+install(TARGETS lidar_odometry_node qr_test_publisher
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

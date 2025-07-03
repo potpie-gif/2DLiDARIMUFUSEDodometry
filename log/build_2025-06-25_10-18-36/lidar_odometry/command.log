@@ -1,0 +1,2 @@
+Invoking command in '/home/por/ros2_ws/build/lidar_odometry': /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2
+Invoked command in '/home/por/ros2_ws/build/lidar_odometry' returned '2': /usr/bin/cmake --build /home/por/ros2_ws/build/lidar_odometry -- -j2 -l2

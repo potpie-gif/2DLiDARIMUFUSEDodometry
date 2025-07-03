@@ -21,6 +21,7 @@ constexpr double g = 9.81007;
 struct State {
     Eigen::Isometry3d pose;
     Eigen::Matrix<double ,6, 1> velocity;
+    double timestamp;
 };
 
 using StatePtr = std::shared_ptr<State>;
@@ -37,6 +38,13 @@ struct ImuData {
     Eigen::Vector3d angular_velocity;
     Eigen::Quaterniond orientation;
     Eigen::Vector3d linear_acceleration;
+};
+
+struct PoseEstimate {
+    Eigen::Vector3d translation;
+    double yaw;
+    double timestamp;
+    double confidence;
 };
 
 using ImuDataPtr = std::shared_ptr<ImuData>;
@@ -56,6 +64,42 @@ inline sensor_msgs::msg::PointCloud2 laser2cloudmsg(sensor_msgs::msg::LaserScan:
     pc2_dst.header.frame_id = frame_id;
 
     return pc2_dst;
+}
+
+inline pcl::PointCloud<pcl::PointXYZ> filter_robot_body(const pcl::PointCloud<pcl::PointXYZ>& input_cloud)
+{
+    pcl::PointCloud<pcl::PointXYZ> filtered_cloud;
+    
+    // Filter out points that are likely from the robot body
+    // Remove points 15cm in front and 20cm from either side
+    double min_range = 0.05;  // Minimum range to ignore very close points
+    double max_range = 0.6;   // Maximum range to limit to 0.6 meters
+    double max_front_distance = 0.15;  // 15cm in front of robot
+    double robot_half_width = 0.20;    // 20cm on each side
+    
+    for (const auto& point : input_cloud.points) {
+        // Flip LiDAR front/back: X becomes -X (flips front/back)
+        pcl::PointXYZ flipped_point;
+        flipped_point.x = -point.x;  // Flip X-axis (front/back)
+        flipped_point.y = point.y;   // Keep Y-axis (left/right)
+        flipped_point.z = point.z;   // Keep Z-axis (up/down)
+        
+        double range = sqrt(flipped_point.x * flipped_point.x + flipped_point.y * flipped_point.y);
+        
+        // Keep points that are:
+        // 1. Beyond minimum range
+        // 2. Within maximum range (0.6 meters)
+        // 3. Not in the robot body area (15cm front, 20cm each side)
+        if (range > min_range && range <= max_range && !(flipped_point.y > 0 && flipped_point.y < max_front_distance && abs(flipped_point.x) < robot_half_width)) {
+            filtered_cloud.points.push_back(flipped_point);
+        }
+    }
+    
+    filtered_cloud.width = filtered_cloud.points.size();
+    filtered_cloud.height = 1;
+    filtered_cloud.is_dense = true;
+    
+    return filtered_cloud;
 }
 
 inline Eigen::Matrix4d inverseSE3(const Eigen::Matrix4d& T) {
